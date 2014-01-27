@@ -1,0 +1,58 @@
+
+.form-left {
+    width:30%;
+    float:left;
+    text-align:right;
+    padding-right:10px;
+    padding-bottom: 3px;
+}
+
+.form-right {
+    width:65%;
+    float:left;
+    padding-bottom: 3px;
+    
+}
+
+#form-div {
+    margin-left: auto;
+    margin-right: auto;
+    width:650px;
+    /*background-color:blue;*/
+}
+
+#main {
+    width:800px;
+    /*background-color: #ffffcc;*/
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#dForm-submit {
+    padding-left:32%;
+}
+
+input[type=submit]{
+    border:none;
+    background-color:rgb(106, 166, 247);
+    color:white;
+    cursor:pointer;
+}
+
+input:focus{
+    outline:none;
+}
+
+.left-label {
+    color:rgb(96, 98, 98);
+}
+
+.avail{
+    color:rgb(106, 166, 247);
+}
+
+.taken{
+    color:#ff3366;
+        
+}
+

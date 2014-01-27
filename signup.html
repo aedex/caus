@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>CAUS</title>
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/signup.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <form id="signUpForm" action="php/newUser.php" method="POST">
+            <div id="form-div">
+                <div class="form-left">
+                    <span class="left-label">Username</span>
+                </div>
+                <div class="form-right">
+                    <input id="userField" class="valid" type="text" name="username">
+                    <span id="userAvailText"></span>
+                </div>
+                
+                <div class="form-left">
+                    <span class="left-label">Email</span>
+                </div>
+                <div class="form-right">
+                    <input id="emailField" type="text" name="email">
+                    <span id="validMailText"></span>
+                </div>
+                
+                <div class="form-left">
+                    <span class="left-label">Password</span>
+                </div>
+                <div class="form-right">
+                    <input id = "pass1Field" type="password" name="pass1">
+                    <span id="passText"></span>
+                </div>
+                
+                <div class="form-left">
+                    <span class="left-label">Repeat Password</span>
+                </div>
+                <div class="form-right">
+                    <input id="pass2Field" type="password" name="pass2">
+                </div>
+            
+                <div id="dForm-submit">
+                    <input type="submit" value="Submit">
+                    <span id="statusLabel"></span>
+                </div>
+                
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
