@@ -94,8 +94,9 @@ $(function(){
                 return true;
             }else
             {
+                
                 $("#passText").html("Passwords do not match.").attr('class','taken');
-                $pass1F.val('');
+                $pass1F.val('').focus();
                 $pass2F.val('');
                 return false;
             }

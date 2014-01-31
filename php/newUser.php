@@ -1,11 +1,26 @@
 <?php
-    echo 'welcome';
+    include 'CausDb.php';
             
     $username = filter_input(INPUT_POST, "username");
     $email = filter_input(INPUT_POST, "email");
-    $pass1 = filter_input(INPUT_POST, "pass1");
-    $pass2 = filter_input(INPUT_POST, "pass2");
+    $pass = filter_input(INPUT_POST, "pass1");
     
-    echo $username.$email.$pass1.$pass2;
+    $query = "INSERT INTO USERS (USERID, EMAIL,PASSWORD)"
+            ."VALUES ('".$username."','".$email."','".$pass."')";
+    
+    $db = new CausDb($query);
+    
+    //
+    if(!$db->run())
+    {
+        echo 'Welcome to CAUS '.$username;
+        
+    }else{
+        echo 'Registration Failed';
+    }
+    
+    
+    
+
         
 ?>
