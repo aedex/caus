@@ -6,9 +6,11 @@
             <file>file:/Applications/MAMP/htdocs/caus/js/signup.js</file>
             <file>file:/Applications/MAMP/htdocs/caus/css/main.css</file>
             <file>file:/Applications/MAMP/htdocs/caus/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/caus/MySQLScript.sql</file>
             <file>file:/Applications/MAMP/htdocs/caus/php/isValidUser.php</file>
             <file>file:/Applications/MAMP/htdocs/caus/signup.html</file>
             <file>file:/Applications/MAMP/htdocs/caus/php/newUser.php</file>
+            <file>file:/Applications/MAMP/htdocs/caus/php/CausDb.php</file>
         </group>
     </open-files>
 </project-private>
