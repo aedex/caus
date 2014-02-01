@@ -1,28 +1,28 @@
 //console.log();
 
 $(function(){
-    
-    var userAJCheckTO;
-    var emailCheckTO;
-    
-    var validUser = false;
-    var validEmail = false;
-    
-    $("#userField").focus();
-    
-    var hasWhiteSpace = function(input){
+     $("#userField").focus();
+     var userAJCheckTO = 0;
+         emailCheckTO = 0;
+
+         validUser = false;
+         validEmail = false;
+
+
+
+    hasWhiteSpace = function(input){
         return /\s/g.test(input);
     };
     
-    var isValidEmail = function(input){
+    isValidEmail = function(input){
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(input);
     };
     
     $("#userField").on('input',function(){
         var $userField = $(this);
-        var inUserName = $userField.val();
-        var $availText = $("#userAvailText");
+            inUserName = $userField.val();
+            $availText = $("#userAvailText");
         if(inUserName.length > 3 && !hasWhiteSpace(inUserName)){
             
             clearTimeout(userAJCheckTO);
@@ -57,7 +57,7 @@ $(function(){
         clearTimeout(emailCheckTO);
         setTimeout(function(){
             var $emailField = $("#emailField");
-            var $mailText = $("#validMailText");
+                $mailText = $("#validMailText");
 
             var inputEmail = $emailField.val();
 
@@ -83,10 +83,10 @@ $(function(){
     $("#signUpForm").submit(function(){
         console.log("User Valid:" + validUser);
         var $pass1F = $("#pass1Field");
-        var $pass2F = $("#pass2Field");
+            $pass2F = $("#pass2Field");
         
         var pass1 = $pass1F.val();
-        var pass2 = $pass2F.val();
+            pass2 = $pass2F.val();
         
         if(validUser && validEmail){
             if(pass1 === pass2)
